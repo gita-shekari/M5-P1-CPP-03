@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 14:54:37 by gshekari          #+#    #+#             */
-/*   Updated: 2026/05/20 18:41:58 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/05/22 21:00:11 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,15 @@ class ClapTrap
 		unsigned int energyPoints;
 		unsigned int attackDamage;
 	public:
+		ClapTrap();
 		ClapTrap(std::string name);
+		ClapTrap(const ClapTrap& other);
+		ClapTrap& operator=(const ClapTrap& other);
 		~ClapTrap();
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 
 };
-
 
 #endif

@@ -1,4 +1,4 @@
-NAME     := attack
+NAME     := play
 SRCS     := main.cpp ClapTrap.cpp
 OBJS     := $(SRCS:.cpp=.o)
 
