@@ -1,5 +1,5 @@
-NAME     := attack
-SRCS     := main.cpp ClapTrap.cpp
+NAME     := play
+SRCS     := main.cpp ClapTrap.cpp  ScavTrap.cpp
 OBJS     := $(SRCS:.cpp=.o)
 
 all: $(NAME)
