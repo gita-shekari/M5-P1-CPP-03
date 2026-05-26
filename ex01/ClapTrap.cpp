@@ -6,7 +6,7 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 14:54:40 by gshekari          #+#    #+#             */
-/*   Updated: 2026/05/26 15:14:56 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/05/26 20:52:22 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ClapTrap::ClapTrap()
 		energyPoints(10),
 		attackDamage(0)
 {
-	std::cout << "ClapTrap \"" << name << "\" created" << std::endl;
+	std::cout << "ClapTrap " << name << " created" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
@@ -27,12 +27,15 @@ ClapTrap::ClapTrap(std::string name)
 		energyPoints(10),
 		attackDamage(0)
 {
-	std::cout << "ClapTrap \"" << name << "\" created" << std::endl;
+	std::cout << "ClapTrap " << name << " created" << std::endl;
 }
 ClapTrap::ClapTrap(const ClapTrap &other)
+	 : name(other.name),
+		hitPoints(other.hitPoints),
+		energyPoints(other.energyPoints),
+		attackDamage(other.attackDamage)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = other;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &other)
@@ -50,7 +53,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &other)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "ClapTrap \"" << name << "\" destroyed" << std::endl;
+	std::cout << "ClapTrap " << name << " destroyed" << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target)
