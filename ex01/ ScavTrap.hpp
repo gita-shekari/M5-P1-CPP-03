@@ -6,13 +6,13 @@
 /*   By: gshekari <gshekari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/22 20:52:19 by gshekari          #+#    #+#             */
-/*   Updated: 2026/05/22 21:21:27 by gshekari         ###   ########.fr       */
+/*   Updated: 2026/05/26 15:50:20 by gshekari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef SCAVETRAP_HPP
-#define SCAVETRAP_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
 #include <iostream>
 #include <string>
