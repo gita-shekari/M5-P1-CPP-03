@@ -17,14 +17,14 @@ ScavTrap::ScavTrap() : ClapTrap()
 	hitPoints = 100;
 	energyPoints = 50;
 	attackDamage = 20;
-	std::cout << "ScveTrap " << name << " created." << std::endl;
+	std::cout << "ScavTrap " << name << " created." << std::endl;
 }
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
 	hitPoints = 100;
 	energyPoints = 50;
 	attackDamage = 20;
-	std::cout << "ScveTrap " << name << " created." << std::endl;
+	std::cout << "ScavTrap " << name << " created." << std::endl;
 }
 ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
 {
@@ -49,16 +49,16 @@ void ScavTrap::attack(const std::string& target)
 {
 	if(hitPoints == 0)
 	{
-		std::cout << "ScaveTrap " << name << " can not attack because hit point is 0" << std::endl;
+		std::cout << "ScavTrap " << name << " can not attack because hit point is 0" << std::endl;
 		return ;
 	}
 	if (energyPoints == 0)
 	{
-		std::cout << "ScaveTrap " << name << " can not attack because energy point is 0" << std::endl;
+		std::cout << "ScavTrap " << name << " can not attack because energy point is 0" << std::endl;
 		return ;
 	}
 	energyPoints--;
-	std::cout << "ScaveTrap " << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
+	std::cout << "ScavTrap " << name << " attacks " << target << ", causing " << attackDamage << " points of damage!" << std::endl;
 }
 
 void ScavTrap::guardGate()
